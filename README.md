@@ -10,7 +10,9 @@
 ## Projeto em Laravel 5.7 com autenticação de API e CORS configurados.
 
 O projeto já está configurado com [tymondesigns/jwt-auth](https://github.com/tymondesigns/jwt-auth/wiki/Installation) e [barryvdh/laravel-cors](https://github.com/barryvdh/laravel-cors/blob/master/readme.md). 
+
 O Laravel utiliza o Composer para gerenciar suas dependências. Então, antes de usar o Laravel, certifique-se de ter o Composer instalado em sua máquina. 
+
 Após clonar o projeto execute o seguinte comando para instalar todos os pacotes do Laravel. 
 
 ```ruby
@@ -29,11 +31,12 @@ Vá na arquivo .env e configure o acesso ao banco de dados
 ```
  
 
-Já existe duas tabelas users e perfils pra exemplificar a criação de tabela. Execute o seguinte comando para criar as tabelas no banco e criar um usuário inicial para testar o login. 
+Já existe duas tabelas users e perfils pra exemplificar a criação de tabela. Execute o seguinte comando para criar as tabelas no banco e criar um usuário inicial para teste de login.
+
 Os dados de seed está na pasta seeds em database. 
 
 ```ruby
-`php artisan migrate –seed 
+    php artisan migrate –seed 
 ```
 
 As seguintes rotas estão configuras: 
@@ -43,3 +46,14 @@ As seguintes rotas estão configuras:
 - /api/auth/refresh (Refresh token) 
 - /api/auth/me (Recuperar dados do usuário logado) 
 ```
+
+Dados do usuário inicial:
+
+```
+    email: admin@admin.com
+    senha: secret
+```
+
+Link com a colection do postman com os exemplos de login, refresh token e me:
+
+https://www.getpostman.com/collections/3c1c7251ae6488555cb9
