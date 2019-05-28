@@ -36,7 +36,7 @@ Já existe duas tabelas users e perfils pra exemplificar a criação de tabela. 
 Os dados de seed está na pasta seeds em database. 
 
 ```ruby
-    php artisan migrate –seed 
+    php artisan migrate --seed 
 ```
 
 As seguintes rotas estão configuras: 
